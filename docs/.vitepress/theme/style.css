@@ -1,0 +1,233 @@
+:root {
+  /* Juniper */
+  --vp-c-juniper-1: #fafefc;
+  --vp-c-juniper-2: #f2fcf7;
+  --vp-c-juniper-3: #e0f8ed;
+  --vp-c-juniper-4: #cdf3e2;
+  --vp-c-juniper-5: #b7ecd4;
+  --vp-c-juniper-6: #9be2c4;
+  --vp-c-juniper-7: #73d3ae;
+  --vp-c-juniper-8: #1cbf8f;
+  --vp-c-juniper-9: #33cb9a;
+  --vp-c-juniper-10: #1ec08f;
+  --vp-c-juniper-11: #00825b;
+  --vp-c-juniper-12: #0b3d2c;
+
+  /* Gray */
+  --vp-c-gray-1: #fcfcfd;
+  --vp-c-gray-2: #f8f9fb;
+  --vp-c-gray-3: #eff0f4;
+  --vp-c-gray-4: #e6e8ed;
+  --vp-c-gray-5: #dfe1e7;
+  --vp-c-gray-6: #d7dae1;
+  --vp-c-gray-7: #cbcfd7;
+  --vp-c-gray-8: #b7bcc6;
+  --vp-c-gray-9: #8a8e98;
+  --vp-c-gray-10: #7f838d;
+  --vp-c-gray-11: #60646d;
+  --vp-c-gray-12: #1d1f25;
+
+  /* Ink */
+  --vp-c-ink-400: #121317;
+  --vp-c-ink-300: #16181d;
+  --vp-c-ink-200: #23262e;
+  --vp-c-ink-100: #2a2e37;
+  --vp-c-ink-50: #303540;
+
+  --vp-c-white: #ffffff;
+  --vp-c-black: var(--vp-c-ink-400);
+
+  --vp-c-neutral: var(--vp-c-black);
+  --vp-c-neutral-inverse: var(--vp-c-white);
+}
+
+.dark {
+  --vp-c-neutral: var(--vp-c-white);
+  --vp-c-neutral-inverse: var(--vp-c-black);
+}
+
+:root {
+  --vp-c-brand-1: var(--vp-c-juniper-11);
+  --vp-c-brand-2: var(--vp-c-juniper-10);
+  --vp-c-brand-3: var(--vp-c-juniper-11);
+  --vp-c-brand-soft: rgba(28, 191, 143, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: var(--vp-c-juniper-9);
+  --vp-c-brand-2: var(--vp-c-juniper-9);
+  --vp-c-brand-3: var(--vp-c-juniper-10);
+  --vp-c-brand-soft: rgba(28, 191, 143, 0.16);
+}
+
+.dark {
+  --vp-c-gutter: var(--vp-c-ink-50);
+}
+
+:root {
+  --vp-layout-max-width: 1280px;
+}
+
+:root {
+  --vp-nav-height: 64px;
+  --vp-nav-logo-height: 28px;
+}
+
+.VPHomeHero .container {
+  max-width: var(--vp-layout-max-width) !important;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .VPHomeHero .container {
+    padding: 4rem;
+  }
+}
+
+.VPHomeHero .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.VPHomeHero .heading > .text {
+  max-width: 1200px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.8px;
+  color: var(--vp-c-juniper-12);
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .VPHomeHero .heading > .text {
+    font-size: 3rem;
+  }
+}
+
+.dark .VPHomeHero .heading > .text {
+  color: var(--vp-c-juniper-9);
+}
+
+.VPHomeHero .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.VPHomeHero .tagline {
+  text-align: center;
+  max-width: 768px;
+  font-size: 1.2rem;
+  letter-spacing: -0.2px;
+  color: var(--vp-c-gray-10);
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .VPHomeHero .tagline {
+    font-size: 1.5rem;
+  }
+}
+
+.dark .VPHomeHero .tagline {
+  color: var(--vp-c-gray-6);
+}
+
+.dark .VPButton.alt {
+  background-color: var(--vp-c-ink-50);
+  color: var(--vp-c-gray-4);
+}
+
+.dark .VPButton.alt:hover {
+  background-color: var(--vp-c-ink-100);
+}
+
+.VPHomeHero .actions {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.VPHomeHero .actions > .action,
+.VPHomeHero .actions > .action > a {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .VPHomeHero .actions {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+  .VPHomeHero .actions > .action,
+  .VPHomeHero .actions > .action > a {
+    width: auto;
+  }
+}
+
+.DocSearch-Button {
+  border-radius: 1.5rem;
+  padding: 0.25rem 1.5rem;
+  height: auto;
+}
+
+@media (min-width: 960px) {
+  .VPNavBarSearch {
+    padding-right: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .VPNavBarSearch {
+    flex-grow: 0;
+  }
+}
+
+.VPFeature {
+  border-radius: 0.5rem !important;
+}
+
+.VPFeature .icon {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  justify-content: start;
+}
+
+.VPFeature .title {
+  letter-spacing: -0.2px;
+}
+
+.VPFeature .details {
+  letter-spacing: -0.2px;
+  line-height: 1.5;
+}
+
+.VPFeature .VPImage {
+  filter: brightness(0);
+  height: 28px;
+  width: 28px;
+}
+
+.dark .VPFeature .VPImage {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 960px) {
+  .VPHero {
+      padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 12px) 64px 24px !important;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  width: 1%;
+}

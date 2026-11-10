@@ -1,0 +1,24 @@
+version = 1
+
+test_patterns = ["**/*_test.go"]
+
+exclude_patterns = [
+  "docs/**",
+  "**/testdata/**"
+]
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "globstar.dev"
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[transformers]]
+name = "gofmt"
